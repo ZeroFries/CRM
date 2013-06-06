@@ -1,3 +1,4 @@
+#
 require 'singleton'
 require_relative 'Contact.rb'
 class Database
