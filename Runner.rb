@@ -8,7 +8,7 @@ class Runner
 		#convert to sym with str.split.join('_').to_sym
 		:base => ["add", "display all contacts", "display contact or modify it", "display attribute", "exit"],
 
-		:display_contact => ["Enter the contact's ID:"],
+		:display_contact_or_modify_it => ["Enter the contact's ID:"],
 		:modify_contact => ["Modify attribute", "Delete", "Back to main list"],
 		:modify_attribute => ["First name", "Last name", "Email", "Notes"],
 
@@ -70,7 +70,7 @@ class Runner
 			elsif level == :display_all_contacts
 				display_contacts
 				level = :base
-			elsif level == :display_contact
+			elsif level == :display_contact_or_modify_it
 				puts @@output_options[level][0]
 				id = gets.chomp.to_i
 				display_contact(@DB.content_by_id(id))
