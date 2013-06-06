@@ -127,6 +127,7 @@ Runner.new
 
 
 #lessons:
-#
-#
-#
+#use each_with_index to loop thoguh array and count the index
+#use grep to search an array for matching pattern input a.grep("a") returns array of all objects with a
+#use case when instead of if/then for specific cases
+#design your code better ahead of time
