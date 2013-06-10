@@ -9,13 +9,15 @@ class Database
 	end
 
 	def add(info_hash)
-		contacts << Contact.new({
+		contact = Contact.new({
 			id: contacts.size,
 			first_name: info_hash[:first_name],
 			last_name: info_hash[:last_name],
 			email: info_hash[:email],
 			notes: info_hash[:notes]
 			})
+			contacts << contact
+			contact
 	end
 
 	def find_by_attribute(input)

@@ -131,4 +131,9 @@ Runner.new
 #use each_with_index to loop thoguh array and count the index
 #use grep to search an array for matching pattern input a.grep("a") returns array of all objects with a
 #use case when instead of if/then for specific cases
+#can use Contact = Struct.new(:id, name, etc) instead of entire class, since contacts was just a bundle of attributes
 #design your code better ahead of time
+#can use send method on object to send a method name as a variable
+# ex: k.name = "hi", k.email = "yo"
+#option = [:name, :yo].shuffle.first
+# k.send(option, "whats up") => either k.name or k.email = "whats up"
